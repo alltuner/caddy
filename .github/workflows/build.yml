@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 4 * * 1" # weekly, to pick up upstream Caddy patches
+    - cron: "0 4 * * *" # daily, to pick up upstream Caddy patches
   workflow_dispatch:
 
 concurrency:
