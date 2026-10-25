@@ -34,4 +34,4 @@ The default command is `caddy docker-proxy`.
 - `latest` — built from `main`
 - `sha-<commit>` — immutable, per commit
 
-Built for `linux/amd64` and `linux/arm64`, and rebuilt weekly to pick up upstream Caddy patches.
+Built for `linux/amd64` and `linux/arm64`, and rebuilt daily to pick up upstream Caddy patches.
