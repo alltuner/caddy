@@ -3,7 +3,9 @@
 A [Caddy](https://caddyserver.com/) image built with the modules we use across our projects:
 
 - [caddy-dns/cloudflare](https://github.com/caddy-dns/cloudflare) — DNS-01 ACME challenges via Cloudflare
+- [caddy-dns/acmeproxy](https://github.com/caddy-dns/acmeproxy) — DNS-01 ACME challenges delegated to an HTTP endpoint that holds the credentials
 - [caddy-cloudflare-ip](https://github.com/WeidiDeng/caddy-cloudflare-ip) — `trusted_proxies cloudflare` support
+- [caddy-ratelimit](https://github.com/mholt/caddy-ratelimit) — the `rate_limit` directive (use it inside `route`; it has no default directive order)
 - [caddy-docker-proxy](https://github.com/lucaslorentz/caddy-docker-proxy) — label-driven routing from the Docker socket
 
 ## Usage
@@ -32,4 +34,4 @@ The default command is `caddy docker-proxy`.
 - `latest` — built from `main`
 - `sha-<commit>` — immutable, per commit
 
-Built for `linux/amd64` and `linux/arm64`, and rebuilt weekly to pick up upstream Caddy patches.
+Built for `linux/amd64` and `linux/arm64`, and rebuilt daily to pick up upstream Caddy patches.
